@@ -1,0 +1,14 @@
+---- BASICS -----
+sysexit call: 	rax: 60
+				rdi: exit call
+
+
+
+------ CLI ----------
+
+[rsp] - top of stack will contain arguments count.
+[rsp + 8] - will contain argv[0]
+[rsp + 16] - will contain argv[1]
+and so on...
+
+	

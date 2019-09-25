@@ -8,8 +8,8 @@ _start:
 		jmp end
 
 
-arg_err:	mov rax, WRITE
-		mov rdi, STDOUT
+arg_err:             mov rax, WRITE
+	           mov rdi, STDOUT
 		mov rsi, argerrmsg
 		mov rdx, argerrmsg_l
 		syscall
